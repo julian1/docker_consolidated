@@ -1,0 +1,7 @@
+
+docker build -t ethereum . 2>&1 | tee build.log
+
+# force
+# docker build --no-cache  -t ethereum . 
+
+

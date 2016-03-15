@@ -1,0 +1,8 @@
+
+docker run --rm --name geonetwork \
+  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+  --cap-add SYS_PTRACE \
+  -p 8080:8080 -p 8000:8000 \
+  -v $(pwd)/:/root/docker:rw \
+  -i -t geonetwork:latest /bin/bash
+

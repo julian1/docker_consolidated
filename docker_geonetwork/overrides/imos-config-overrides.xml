@@ -1,0 +1,4 @@
+<overrides>
+    <import file="/WEB-INF/server-props-overrides.xml"/>
+    <!-- import file="/var/lib/tomcat7/overrides/anzmest-config-overrides.xml"/ -->
+</overrides>

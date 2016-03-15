@@ -1,0 +1,45 @@
+<config>
+   <datasets>
+      <dataset id="ACORN_SAG_nonQC" location="/mnt/opendap/1/IMOS/opendap/ACORN/gridded_1h-avg-current-map_non-QC/SAG/????/??/??/*.nc" queryable="true" intervalTime="false" dataReaderClass="" copyrightStatement="&lt;hr /&gt;  &lt;h3&gt;Ocean current map (non Quality Controlled) - 1 hour average gridded product&lt;/h3&gt; Data product available as &lt;b&gt;NetCDF files per hour&lt;/b&gt; on OPeNDAP: &lt;br /&gt; &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/gridded_1h-avg-current-map_non-QC/SAG/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;Non QC &lt;/a&gt; &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/gridded_1h-avg-current-map_QC/SAG/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;QC &lt;/a&gt; &lt;br /&gt; &lt;br /&gt; Data product available as &lt;b&gt;monthly aggregated NetCDF files&lt;/b&gt; on OPeNDAP: &lt;br /&gt; &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/monthly_gridded_1h-avg-current-map_non-QC/SAG/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;Non QC &lt;/a&gt; &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/monthly_gridded_1h-avg-current-map_QC/SAG/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;QC &lt;/a&gt; &lt;hr /&gt; &lt;p&gt;The South Australian Gulf site is composed of two radar stations: &lt;/p&gt;  &lt;ul&gt;    &lt;li&gt;&lt;b&gt;Cape Spencer&lt;/b&gt; Radial data on OPeNDAP: &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/radial/CSP/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;Non QC &lt;/a&gt; &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/radial_quality_controlled/CSP/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;QC &lt;/a&gt; &lt;/li&gt;  &lt;li&gt;&lt;b&gt;Cape Wiles&lt;/b&gt; Radial data on OPeNDAP: &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/radial/CWI/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;Non QC &lt;/a&gt; &lt;a rel=&apos;external&apos; href=&apos;https://thredds.aodn.org.au/thredds/catalog/IMOS/ACORN/radial_quality_controlled/CWI/catalog.html&apos; target=&apos;_blank&apos; class=&apos;h3&apos;&gt;QC &lt;/a&gt; &lt;/li&gt;   &lt;/ul&gt;    &lt;br /&gt;   &lt;br /&gt;  " moreInfo="" disabled="false" title="Radar data - South Australia Gulf (non QC data)" updateInterval="60">
+         <variables>
+            <variable id="SPEED" title="sea_water_speed" colorScaleRange="0.0 1.0" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="UCUR" title="eastward_sea_water_velocity" colorScaleRange="-0.8 0.8" palette="redblue" scaling="linear" numColorBands="253"/>
+            <variable id="VCUR" title="northward_sea_water_velocity" colorScaleRange="-0.8 0.8" palette="redblue" scaling="linear" numColorBands="253"/>
+            <variable id="SPEED_quality_control" title="sea_water_speed status_flag" colorScaleRange="0.0 1.0" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="UCUR_quality_control" title="eastward_sea_water_velocity status_flag" colorScaleRange="0.0 1.0" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="VCUR_quality_control" title="northward_sea_water_velocity status_flag" colorScaleRange="0.0 1.0" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="sea_water_velocity" title="sea_water_velocity" colorScaleRange="0.0 1.0" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="sea_water_velocity status_flag" title="sea_water_velocity status_flag" colorScaleRange="0.0 1.0" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="UCUR_sd" title="Standard deviation of sea water velocity U component values in 1 hour, after rejection of obvious bad data (see abstract)." colorScaleRange="0.0022284556 0.3934998" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="VCUR_sd" title="Standard deviation of sea water velocity V component values in 1 hour, after rejection of obvious bad data (see abstract)." colorScaleRange="0.0031800894 0.3435579" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="NOBS1" title="Number of observations of sea water velocity in 1 hour from station 1, after rejection of obvious bad data (see abstract)." colorScaleRange="2.85 6.15" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="NOBS2" title="Number of observations of sea water velocity in 1 hour from station 2, after rejection of obvious bad data (see abstract)." colorScaleRange="2.9 5.1" palette="rainbow" scaling="linear" numColorBands="253"/>
+            <variable id="GDOP" title="radar beam intersection angle" colorScaleRange="-50.0 50.0" palette="rainbow" scaling="linear" numColorBands="253"/>
+         </variables>
+      </dataset>
+   </datasets>
+   <threddsCatalog> </threddsCatalog>
+   <contact>
+      <name>System Administrator</name>
+      <organization>AODN</organization>
+      <telephone> </telephone>
+      <email>sys.admin@emii.org.au</email>
+   </contact>
+   <server>
+      <title>AODN ncWMS Server</title>
+      <allowFeatureInfo>true</allowFeatureInfo>
+      <maxImageWidth>1024</maxImageWidth>
+      <maxImageHeight>1024</maxImageHeight>
+      <abstract> </abstract>
+      <keywords> </keywords>
+      <url> </url>
+      <adminpassword>db4d09a4a00be4223d5024b0bbe1afa4</adminpassword>
+      <allowglobalcapabilities>true</allowglobalcapabilities>
+   </server>
+   <cache enabled="false">
+      <elementLifetimeMinutes>1440</elementLifetimeMinutes>
+      <maxNumItemsInMemory>200</maxNumItemsInMemory>
+      <enableDiskStore>true</enableDiskStore>
+      <maxNumItemsOnDisk>2000</maxNumItemsOnDisk>
+   </cache>
+</config>

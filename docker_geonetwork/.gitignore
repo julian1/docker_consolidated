@@ -1,0 +1,13 @@
+*.swp
+*.swo
+*.swm
+*.swn
+*.class
+target
+testWrite.nc
+env.*sh
+
+# Include code style settings for IntelliJ IDEA projects
+.idea/*
+!.idea/codeStyleSettings.xml
+*.iml

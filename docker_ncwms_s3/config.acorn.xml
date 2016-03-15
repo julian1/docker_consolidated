@@ -1,0 +1,44 @@
+<config>
+   <datasets>
+      <dataset id="TEST_ACORN" location="IMOS/ACORN/gridded_1h-avg-current-map_QC/ROT/2014/01/??/.*\.nc" queryable="true" dataReaderClass="" copyrightStatement="" moreInfo="" disabled="false" title="TEST_ACORN" updateInterval="-1">
+         <variables>
+            <variable id="UCUR" title="eastward_sea_water_velocity" colorScaleRange="-0.41497928 1.0230012" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="VCUR" title="northward_sea_water_velocity" colorScaleRange="-1.0675907 0.34788996" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="UCUR_sd" title="Standard deviation of sea water velocity U component values in 1 hour, after rejection of obvious bad data (see abstract)." colorScaleRange="-0.0074573904 0.6222239" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="VCUR_sd" title="Standard deviation of sea water velocity V component values in 1 hour, after rejection of obvious bad data (see abstract)." colorScaleRange="0.007009889 0.29289973" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="NOBS1" title="Number of observations of sea water velocity in 1 hour from station 1, after rejection of obvious bad data (see abstract)." colorScaleRange="2.85 6.15" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="NOBS2" title="Number of observations of sea water velocity in 1 hour from station 2, after rejection of obvious bad data (see abstract)." colorScaleRange="2.85 6.15" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="UCUR_quality_control" title="eastward_sea_water_velocity status_flag" colorScaleRange="1.9 4.1" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="VCUR_quality_control" title="northward_sea_water_velocity status_flag" colorScaleRange="1.9 4.1" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="GDOP" title="radar beam intersection angle" colorScaleRange="-8.986928 188.95198" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sea_water_velocity" title="sea_water_velocity" colorScaleRange="-0.048957445 1.3813765" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sea_water_velocity status_flag" title="sea_water_velocity status_flag" colorScaleRange="2.6870058 5.7982755" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+         </variables>
+      </dataset>
+   </datasets>
+   <threddsCatalog> </threddsCatalog>
+   <contact>
+      <name> </name>
+      <organization> </organization>
+      <telephone> </telephone>
+      <email> </email>
+   </contact>
+   <server>
+      <title>My ncWMS server</title>
+      <allowFeatureInfo>true</allowFeatureInfo>
+      <maxImageWidth>1024</maxImageWidth>
+      <maxImageHeight>1024</maxImageHeight>
+      <abstract> </abstract>
+      <keywords> </keywords>
+      <url> </url>
+      <adminpassword>ncWMS</adminpassword>
+      <allowglobalcapabilities>true</allowglobalcapabilities>
+   </server>
+   <cache enabled="false">
+      <elementLifetimeMinutes>1440</elementLifetimeMinutes>
+      <maxNumItemsInMemory>200</maxNumItemsInMemory>
+      <enableDiskStore>true</enableDiskStore>
+      <maxNumItemsOnDisk>2000</maxNumItemsOnDisk>
+   </cache>
+   <dynamicServices/>
+</config>

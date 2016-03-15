@@ -1,0 +1,21 @@
+
+
+# for sshd, create container, start it, and detach 
+
+docker create \
+  --privileged \
+  --name geoserver \
+  -h docker-geoserver \
+  --cap-add SYS_PTRACE \
+  -p 8082:8080 -p 8002:8000 -p 24:22 \
+  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v $(pwd)/:/root/docker:rw \
+  -t geoserver:latest 
+
+# the -e variable doesn't work... when using ssh.
+
+# -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+# -i -t ncwms:latest /bin/bash
+
+
+

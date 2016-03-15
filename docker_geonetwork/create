@@ -1,0 +1,11 @@
+
+docker create \
+  --name geonetwork \
+  -h geonetwork \
+  --cap-add SYS_PTRACE \
+  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v $(pwd)/:/root/docker:rw \
+  -t geonetwork:latest 
+
+
+

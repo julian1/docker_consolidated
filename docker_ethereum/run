@@ -1,0 +1,7 @@
+
+docker run --rm --name ethereum \
+  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -p 8080:8080 -p 80:80 \
+  -v $(pwd)/:/root/docker:rw \
+  -i -t ethereum:latest /bin/bash
+

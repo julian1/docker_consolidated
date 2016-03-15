@@ -1,0 +1,24 @@
+
+#  --rm \
+chmod 666 config.xml
+
+
+# for sshd, create container, start it, and detach 
+
+docker create \
+  --privileged \
+  --name ncwms \
+  -h docker-ncwms \
+  --cap-add SYS_PTRACE \
+  -p 8080:8080 -p 8000:8000 -p 23:22 \
+  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v $(pwd)/:/root/docker:rw \
+  -t ncwms:latest 
+
+# the -e variable doesn't work... when using ssh.
+
+# -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+# -i -t ncwms:latest /bin/bash
+
+
+

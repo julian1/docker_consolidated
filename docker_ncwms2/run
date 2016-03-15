@@ -1,0 +1,9 @@
+
+sudo docker run \
+  --rm \
+  --name ncwms2 \
+  --cap-add SYS_PTRACE \
+  -p 8080:8080 -p 8000:8000 \
+  -v $(pwd)/:/root/docker:rw  \
+  -i -t ncwms2:latest /bin/bash
+

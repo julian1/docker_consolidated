@@ -1,0 +1,63 @@
+<config>
+   <datasets>
+      <dataset id="TEST_ACORN" location="/IMOS/ACORN/gridded_1h-avg-current-map_QC/ROT/..../../../.*\.nc" queryable="true" dataReaderClass="" copyrightStatement="" moreInfo="" disabled="false" title="TEST_ACORN" updateInterval="-1">
+         <variables>
+            <variable id="UCUR" title="eastward_sea_water_velocity" colorScaleRange="-0.41497928 1.0230012" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="VCUR" title="northward_sea_water_velocity" colorScaleRange="-1.0675907 0.34788996" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="UCUR_sd" title="Standard deviation of sea water velocity U component values in 1 hour, after rejection of obvious bad data (see abstract)." colorScaleRange="-0.0074573904 0.6222239" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="VCUR_sd" title="Standard deviation of sea water velocity V component values in 1 hour, after rejection of obvious bad data (see abstract)." colorScaleRange="0.007009889 0.29289973" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="NOBS1" title="Number of observations of sea water velocity in 1 hour from station 1, after rejection of obvious bad data (see abstract)." colorScaleRange="2.85 6.15" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="NOBS2" title="Number of observations of sea water velocity in 1 hour from station 2, after rejection of obvious bad data (see abstract)." colorScaleRange="2.85 6.15" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="UCUR_quality_control" title="eastward_sea_water_velocity status_flag" colorScaleRange="1.9 4.1" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="VCUR_quality_control" title="northward_sea_water_velocity status_flag" colorScaleRange="1.9 4.1" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="GDOP" title="radar beam intersection angle" colorScaleRange="-8.986928 188.95198" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sea_water_velocity" title="sea_water_velocity" colorScaleRange="-0.048957445 1.3813765" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sea_water_velocity status_flag" title="sea_water_velocity status_flag" colorScaleRange="2.6870058 5.7982755" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+         </variables>
+      </dataset>
+      <dataset id="TEST_SRS" location="/IMOS/SRS/sst/ghrsst/L3U-S/n19/..../.*\.nc" queryable="true" dataReaderClass="" copyrightStatement="" moreInfo="" disabled="false" title="TEST_SRS" updateInterval="-1">
+         <variables>
+            <variable id="sea_surface_temperature" title="sea_surface_skin_temperature" colorScaleRange="272.81757 296.14856" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sst_dtime" title="time difference from reference time" colorScaleRange="793.88324 1298.7369" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="dt_analysis" title="deviation from last SST analysis" colorScaleRange="-2.7129817 1.7923975" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="wind_speed" title="wind_speed" colorScaleRange="1.7239249 23.060455" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="wind_speed_dtime_from_sst" title="time difference of wind speed measurement from sst measurement" colorScaleRange="-0.88191265 -0.7432467" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="aerosol_dynamic_indicator" title="aerosol dynamic indicator" colorScaleRange="0.012836831 0.12987472" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="adi_dtime_from_sst" title="time difference of ADI measurement from sst measurement" colorScaleRange="28.362232 277.72632" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="satellite_zenith_angle" title="satellite zenith angle" colorScaleRange="-1.9162215 72.02322" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="l2p_flags" title="L2P flags" colorScaleRange="8115.2 9804.8" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="quality_level" title="quality level of SST pixel" colorScaleRange="1.85 5.15" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sses_bias" title="SSES bias estimate" colorScaleRange="-1.1159053 0.28096446" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sses_standard_deviation" title="SSES standard deviation estimate" colorScaleRange="0.002438683 0.9409608" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sses_count" title="SSES count" colorScaleRange="0.8573644 4.1562696" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sea_ice_fraction" title="sea_ice_area_fraction" colorScaleRange="-0.0386724 1.0515289" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+            <variable id="sea_ice_fraction_dtime_from_sst" title="time difference of sea ice fraction measurement from sst measurement" colorScaleRange="27.231443 27.592978" palette="rainbow" scaling="linear" numColorBands="250" disabled="false"/>
+         </variables>
+      </dataset>
+   </datasets>
+   <threddsCatalog> </threddsCatalog>
+   <contact>
+      <name> </name>
+      <organization> </organization>
+      <telephone> </telephone>
+      <email> </email>
+   </contact>
+   <server>
+      <title>My ncWMS server</title>
+      <allowFeatureInfo>true</allowFeatureInfo>
+      <maxImageWidth>1024</maxImageWidth>
+      <maxImageHeight>1024</maxImageHeight>
+      <abstract> </abstract>
+      <keywords> </keywords>
+      <url> </url>
+      <adminpassword>ncWMS</adminpassword>
+      <allowglobalcapabilities>true</allowglobalcapabilities>
+   </server>
+   <cache enabled="false">
+      <elementLifetimeMinutes>1440</elementLifetimeMinutes>
+      <maxNumItemsInMemory>200</maxNumItemsInMemory>
+      <enableDiskStore>true</enableDiskStore>
+      <maxNumItemsOnDisk>2000</maxNumItemsOnDisk>
+   </cache>
+   <dynamicServices/>
+</config>
